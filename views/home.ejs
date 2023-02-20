@@ -1,0 +1,24 @@
+<%- include ("partials/header")-%>
+
+
+<h1>Home</h1>
+
+<p> <%= StartingContent %> </p>
+
+
+
+<% for (var i=0; i < postArrays.length; i++) { %> 
+    <h2> <%= postArrays[i].titleBody %> </h2>
+    <p> <%= postArrays[i].bodyPost.substring(0,100)+ "..."  %>
+         <a  href="/post/<%=postArrays[i].titleBody%>" >Read more</a> </p>
+<% }; %>
+
+<div>
+  
+<a  class="adding"  href="/compose">
+    <button>Compose</button>
+</a>
+
+</div>
+
+<%- include ("partials/footer")-%>
