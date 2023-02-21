@@ -20,7 +20,7 @@ let postArray = [];
 
 app.get("/", function(req, res){
   res.render("home", {StartingContent : homeStartingContent, postArrays : postArray})
-  console.log(postArray)
+
  
 })
 
@@ -36,36 +36,6 @@ app.get("/compose", function(req, res){
   res.render("compose")
  
 })
-
-
-
-
-// let input = postArray.titleBody
-// // const str = 'flexiple';
-// // const str2 = ""
-// console.log(typeof(input))
-
-
-// function input(){
-  
-// input = input.charAt(0).toUpperCase() + str.slice(1);
-// console.log(str2);
-
-// //Output: Flexiple
-
-// let input = postArray.titleBody;
-// let str2 = input.charAt(0).toUpperCase() + input.slice(1);
-// console.log(str2);
-
-//Output: Abc efg
-// }
-
-
-
-
-
-
-
 
 app.post("/compose", function(req, res){
  
